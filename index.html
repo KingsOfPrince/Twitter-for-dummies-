@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Twitter for dummis </title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-envelope"></i>
+      <i class="fa-solid fa-bookmark"></i>
+      <i class="fa-solid fa-file-lines"></i>
+      <i class="fa-solid fa-ellipsis"></i>
+      <i class="fa-solid fa-feather-pointed"></i>
+    </nav>
+    <main class="container">
+      <h4>Home</h4>
+      <header class="new-tweet">
+        <div class="user-img"></div>
+        <form id="addTweet">
+          <input
+            type="text"
+            class="tweet-text-content"
+            placeholder="What's happening"
+          />
+          <button type="submit" class="tweet-btn" disabled>Tweet</button>
+        </form>
+      </header>
+      <ul class="tweets">
+        <li class="tweet">
+          <div class="user-details">
+            <div class="user-img"></div>
+            <div class="tweet-detail">
+              <div class="user">
+                <span class="user-name">Kings</span>
+                <span class="user-handel">@idkwhy</span>
+                <span class="tweet-age">. 1h</span>
+              </div>
+              <input
+                type="text"
+                class="tweet-text-content"
+                value="This is not my first dummi tweet"
+                readonly
+              />
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+          </div>
+          <div class="interactions">
+            <small class="interection"
+              ><i class="fa-solid fa-comment"></i> <span>0</span></small
+            >
+            <small class="interection"
+              ><i class="fa-solid fa-retweet"></i><span>0</span></small
+            >
+            <small class="interection"
+              ><i class="fa-regular fa-heart"></i><span>0</span></small
+            >
+            <small class="interection"
+              ><i class="fa-solid fa-upload"></i
+            ></small>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div>
+      <div id="particles-js"></div>
+      <script src="particles/particles.js"></script>
+      <script src="particles/app.js"></script>
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>
